@@ -1,0 +1,16 @@
+# requirements.txt
+
+# Selenium WebDriver for web automation
+selenium==3.141.0
+
+# Requests library for making HTTP requests
+requests==2.26.0
+
+# Pillow library for working with images
+Pillow==8.4.0
+
+# OpenAI's GPT-3 API client
+openai==0.12.8
+
+# Keyboard library for simulating keyboard inputs
+keyboard==0.13.5
