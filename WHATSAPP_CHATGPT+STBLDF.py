@@ -33,28 +33,25 @@ Description("Assistant dexter is a famous computer Hacker that is super good " +
 
 Loves("likes to smoke weed" +"building things" + "drives his black mercedes ")
 
-"Assistant Name = dexter".
+"Assistant Name = Dexter".
 
-"Assistant Virgil Email = Dexter@Hotmail.com".
+"Assistant Dexter Email = Dexter@Hotmail.com".
 
-"Assistant Virgil Cellphone nr = +31637372890".
+"Assistant Dexter Cellphone nr = +31637372890".
 
-"Assistant dexter Tiktok  = (www.tiktok.com/@dexterbot).
+"Assistant Dexter Tiktok  = (www.tiktok.com/@dexterbot).
 
 """
 
 api_key = 'your API KEY HERE'
-conversation_history_file = 'conversation_history_Virgil.txt'  # File to store conversation history to send back in the message
-conversation_file = 'conversations_Virgil.txt'  # File to store all conversation
+conversation_history_file = 'conversation_history_dexter.txt'  # File to store conversation history to send back in the message
+conversation_file = 'conversations_dexter.txt'  # File to store all conversation
 
 # Set up the WebDriver (assuming Chrome here - make sure to download chromedriver.exe and provide its path)
 chrome_driver_path = 'H:/chromedriver/chromedriver.exe'
 driver = webdriver.Chrome()
 
-Path = 'H:/SPOOFPICTURES/bombi.jpg'
-#def send_image(contact_name, picture: Path,):
-
-url = "http://192.168.1.130:7866"
+url = "STABLEDIFUSSION URL HERE"
 sampler_index = "DPM++ 2M Karras"  # Assuming this is a string value
 
 # Open the webpage
@@ -77,14 +74,12 @@ ascii_art_start = """
 """
 
 ascii_art0 = """
-  _____  ___     __  ____   ____  _      ____  __ __  ____  
- / ___/ /   \   /  ]|    | /    || |    |    \|  |  ||    \ 
-(   \_ |     | /  /  |  | |  o  || |    |  D  )  |  ||  _  |
- \__  ||  O  |/  /   |  | |     || |___ |    /|  |  ||  |  |
- /  \ ||     /   \_  |  | |  _  ||     ||    \|  :  ||  |  |
- \    ||     \     | |  | |  |  ||     ||  .  \     ||  |  |
-  \___| \___/ \____||____||__|__||_____||__|\_|\__,_||__|__|
 
+_______   ____   ____________   ____   ____    __| _/|__| ____    ____  
+\_  __ \_/ __ \ /  ___/\____ \ /  _ \ /    \  / __ | |  |/    \  / ___\ 
+ |  | \/\  ___/ \___ \ |  |_> >  <_> )   |  \/ /_/ | |  |   |  \/ /_/  >
+ |__|    \___  >____  >|   __/ \____/|___|  /\____ | |__|___|  /\___  / 
+             \/     \/ |__|               \/      \/         \//_____/ 
 """
 
 ascii_art1 = """
@@ -321,14 +316,14 @@ while True:
                     if title_text in sent_messages:
                         elements_with_title[7].click()
                         time.sleep(2)
-                        prompt = f"\n{conversation_history}\n###Human:{message}\n###Assistant: Virgil:"
+                        prompt = f"\n{conversation_history}\n###Human:{message}\n###Assistant: Dexter:"
                         response_text = generate_response(prompt)
                         keyboard.write(response_text)
                         time.sleep(5)
                         keyboard.send('enter')
                         time.sleep(1)
                         keyboard.send('esc')
-                        justatest = f"\n###Human:{name}:{message},\n###Assistant: Virgil:{response_text}"  # new part
+                        justatest = f"\n###Human:{name}:{message},\n###Assistant: Dexter:{response_text}"  # new part
                         read_and_store()
                         clear_screen()
                         print(ascii_art2)
@@ -339,7 +334,7 @@ while True:
                 if title_text not in titles_to_exclude and title_text not in sent_messages:
                         elements_with_title[7].click()
                         time.sleep(2)
-                        prompt = f"\n###Human:{message}, give me a responce back to Human {name} and use some emoijs 💕 and be curious !\n###Assistant: Virgil:"
+                        prompt = f"\n###Human:{message}, give me a responce back to Human {name} and use some emoijs 💕 and be curious !\n###Assistant: Dexter:"
                         response_text = generate_response(prompt)
                         keyboard.write(response_text)
                         time.sleep(5)
